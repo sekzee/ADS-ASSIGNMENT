@@ -1,7 +1,8 @@
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+
 
 # loading the dataset into pandas dataframe
 df_gdp = pd.read_csv('GDP_per_capita_2015_to_2019_Finland_Norway_Sweden (4).csv')
