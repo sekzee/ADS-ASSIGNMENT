@@ -3,16 +3,16 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# load the dataset into pandas dataframe
+# loading the dataset into pandas dataframe
 df_gdp = pd.read_csv('GDP_per_capita_2015_to_2019_Finland_Norway_Sweden (4).csv')
 print(df_gdp)
 
 
-# Create a list of years
+# Create list of years
 column_year = ['2015', '2016', '2017', '2018', '2019']
 
 
-# produce a line plot showing multiple lines
+# A line plot showing multiple lines
 plt.figure()
 
 # plot the three countries with labels
@@ -46,7 +46,7 @@ data = {'year': [2015, 2016, 2017, 2018, 2019],
 # create a Pandas data frame from the dictionary
 df = pd.DataFrame(data)
 
-# set the 'year' column as the index
+# Input the 'year' column as the index
 df.set_index('year', inplace=True)
 
 # select the data for the specified years
@@ -77,6 +77,8 @@ plt.pie(data_gdp, labels=labels, autopct='%1.1f%%')
 plt.title('Countries with the Highest GDP in 2018')
 plt.legend(loc='best')
 plt.show()
+
+#Piechart Comparing the GDP of 2015
 
 #Country with highest GDP in 2015
 labels =['Norway', 'Finland', 'Sweden']
