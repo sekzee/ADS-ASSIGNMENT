@@ -34,7 +34,6 @@ plt.show()
 
 
 # Produce graphs using two other visualisation methods
-
 # Histogram
 
 # create a dictionary with the data
