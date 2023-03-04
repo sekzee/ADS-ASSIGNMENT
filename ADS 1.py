@@ -66,7 +66,6 @@ plt.show()
 
 
 # Piechart comparing GDP of two years
-
 # Country with highest GDP in 2018
 
 
@@ -79,8 +78,8 @@ plt.legend(loc='best')
 plt.show()
 
 #Piechart Comparing the GDP of 2015
-
 #Country with highest GDP in 2015
+
 labels =['Norway', 'Finland', 'Sweden']
 data_gdp = [74356,42802 , 51545]
 plt.figure(figsize=(8, 8))
@@ -88,5 +87,8 @@ plt.pie(data_gdp, labels=labels, autopct='%1.1f%%')
 plt.title('Countries with the Highest GDP in 2015')
 plt.legend(loc='best')
 plt.show()
+
+# save as png
+plt.savefig("Piechart.png")
 
 
