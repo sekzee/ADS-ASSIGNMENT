@@ -159,6 +159,7 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.savefig('barplot.png')
 plt.show()
 
+#plotting a heatmap graph with he different indicators for analysis
 # Define the data for the heatmap
 United_States = pd.DataFrame({
     'Agricultural land': Agric_land['United States'], 
@@ -187,10 +188,10 @@ for i in range(len(corr_matrix.columns)):
 # Save the plot as a PNG image
 plt.savefig('heatmap.png', dpi=300)
 
-# Show the plot in the console or in a separate window
+# Show the plot in the console 
 plt.show()
 
-
+#Heat map plot for China
 # Define the data for the heatmap
 China = pd.DataFrame({
     'Agricultural land': Agric_land['China'], 
@@ -219,7 +220,7 @@ for i in range(len(corr_matrix.columns)):
 # Save the plot as a PNG image
 plt.savefig('heatmap.png', dpi=300)
 
-# Show the plot in the console or in a separate window
+# Show the plot
 plt.show()
 
 
