@@ -160,7 +160,7 @@ plt.savefig('barplot.png')
 plt.show()
 
 #plotting a heatmap graph with he different indicators for analysis
-# Define the data for the heatmap
+# Define the data 
 United_States = pd.DataFrame({
     'Agricultural land': Agric_land['United States'], 
     'Urban population': Urban_pop['United States'],
@@ -192,7 +192,7 @@ plt.savefig('heatmap.png', dpi=300)
 plt.show()
 
 #Heat map plot for China
-# Define the data for the heatmap
+# Define the data
 China = pd.DataFrame({
     'Agricultural land': Agric_land['China'], 
     'Urban population': Urban_pop['China'],
