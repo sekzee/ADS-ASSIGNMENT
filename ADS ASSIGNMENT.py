@@ -28,7 +28,7 @@ def read_climate_data (filename, **others):
     Returns: 
         The original dataset format as obtained from the world bank and its transposed version
     """        
-# Read the World Bank data into a dataframe
+# Read the World Bank  data into a dataframe
     df_climate_data = pd.read_csv(filename, skiprows=4)
 # Transpose the dataframe and set the country code as the index
     df_years = df_climate_data.drop(['Country Code', 'Indicator Code'], axis=1)
@@ -192,7 +192,6 @@ plt.savefig('heatmap.png', dpi=300)
 plt.show()
 
 #Heat map plot for China
-# Define the data
 China = pd.DataFrame({
     'Agricultural land': Agric_land['China'], 
     'Urban population': Urban_pop['China'],
